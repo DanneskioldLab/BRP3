@@ -1,5 +1,6 @@
 
-#single cell expression plot generation by seurat object
+#BRP3 Project
+#Single-cell expression plot generation by seurat object
 
 
 install.packages("remotes")
@@ -214,7 +215,7 @@ ggplot(df, aes(x = tSNE_1, y = tSNE_2, color = PCSK2)) + geom_point(size = 1) + 
 DotPlot_scCustom(seurat_object, features = c("BRINP3", "PCSK2"), group.by = "Annotation", colors_use = rev(viridis_plasma_dark_high))
 
 ----------------------
-  #Mouse Colon
+  #mouse colon
   #Expression matrix generation
   expression_matrix <- readMM("gene_sorted-mli.matrix.mtx")
 genes <- read.delim("mli.genes.tsv", header = FALSE)
